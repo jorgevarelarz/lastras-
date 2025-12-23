@@ -1,19 +1,17 @@
 @use './variables' as *;
 
 .hero {
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: block;
   text-align: center;
   padding-top: 80px;
-  position: relative;
-  overflow: hidden;
-  background-image: url('/images/hero-tortilla.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-color: $bg-color;
+
+  .hero-video {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    display: block;
+  }
 
   .hero-top-info {
     display: flex;
@@ -22,7 +20,8 @@
     text-transform: uppercase;
     font-size: 0.8rem;
     letter-spacing: 1px;
-    margin-bottom: 3rem;
+    margin: 3rem auto 2rem;
+    justify-content: center;
     border-bottom: 1px solid $text-black;
     padding-bottom: 10px;
 
@@ -40,8 +39,7 @@
     text-transform: uppercase;
     color: $text-black;
     margin: 0;
-    position: relative;
-    z-index: 2;
+    margin: 0 auto 1.5rem;
 
     @include mobile {
       font-size: 4rem;
@@ -52,14 +50,12 @@
     font-family: $font-fun;
     color: $accent-green;
     font-size: 6rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    z-index: 1;
+    position: static;
+    transform: rotate(-5deg);
     white-space: nowrap;
     opacity: 0.8;
     width: 100%;
+    margin: 0 auto 2rem;
 
     @include mobile {
       font-size: 3rem;
@@ -67,11 +63,11 @@
   }
 
   .hero-icons {
-    margin-top: 3rem;
+    margin-top: 2rem;
     display: flex;
     gap: 2rem;
     align-items: center;
-    z-index: 2;
+    justify-content: center;
 
     .icon-circle {
       width: 80px;

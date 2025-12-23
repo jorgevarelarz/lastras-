@@ -1,9 +1,10 @@
 @use './variables' as *;
 
 .contact-section {
-  background-color: $text-black;
-  color: $bg-color;
+  background-color: $bg-color;
+  color: $text-black;
   padding: 4rem 0 2rem 0;
+  border-top: 2px solid $text-black;
 
   .contact-grid {
     display: grid;
@@ -14,9 +15,11 @@
     .info-col {
       h3 {
         font-family: $font-display;
-        color: $accent-green;
-        font-size: 1.5rem;
+        color: $text-black;
+        font-size: 2rem;
         margin-bottom: 1.5rem;
+        border-bottom: 2px solid $accent-green;
+        display: inline-block;
       }
 
       ul {
@@ -30,10 +33,11 @@
           align-items: flex-start;
           gap: 10px;
           font-size: 1rem;
-          color: $bg-color;
+          color: $text-black;
+          font-weight: 500;
 
           i {
-            color: $accent-green;
+            color: $text-black;
             margin-top: 5px;
           }
         }
@@ -43,13 +47,21 @@
         margin-top: 1.5rem;
 
         a {
-          color: $bg-color;
-          font-size: 1.5rem;
+          color: $text-black;
+          font-size: 1rem;
           margin-right: 15px;
-          transition: color 0.3s;
+          transition: all 0.3s;
+          border: 1px solid $text-black;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
 
           &:hover {
-            color: $accent-green;
+            background: $text-black;
+            color: $bg-color;
           }
         }
       }
@@ -62,9 +74,9 @@
         min-height: 250px;
         border: 0;
         border-radius: 0;
-        filter: grayscale(100%);
+        filter: grayscale(100%) contrast(1.2);
         transition: filter 0.3s;
-        outline: 1px solid $bg-color;
+        outline: 2px solid $text-black;
 
         &:hover {
           filter: grayscale(0%);
@@ -74,10 +86,13 @@
   }
 
   .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid $text-black;
     text-align: center;
     padding-top: 2rem;
     font-size: 0.8rem;
-    color: rgba($bg-color, 0.7);
+    color: $text-black;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 }

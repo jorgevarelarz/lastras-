@@ -4,6 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adega Lastras | La Mejor Tortilla de Betanzos</title>
+    <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
+    <meta
+      name="description"
+      content="Adega Lastras en Betanzos: tortilla legendaria, vinos gallegos y eventos especiales. Reserva tu plaza por WhatsApp."
+    />
+    <meta property="og:title" content="Adega Lastras" />
+    <meta
+      property="og:description"
+      content="Tortilla legendaria, vinos gallegos y eventos especiales en Betanzos. Reserva tu plaza por WhatsApp."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://adegalastras.com/" />
+    <meta property="og:image" content="/images/hero-tortilla.png" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&family=Chewy&display=swap"
       rel="stylesheet"
@@ -23,15 +36,33 @@
           <i class="fas fa-bars"></i>
         </div>
         <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#premios">Laureadas</a></li>
-          <li><a href="#carta">Carta</a></li>
-          <li><a href="#contacto" class="btn-reserva">Reservar</a></li>
+          <li><a href="/#inicio">Inicio</a></li>
+          <li><a href="/carta.html">Carta</a></li>
+          <li><a href="/eventos.html">Eventos</a></li>
+          <li>
+            <a
+              href="https://api.whatsapp.com/message/CN57R5THJUMKC1?autoload=1&app_absent=0&utm_source=ig"
+              class="btn-reserva"
+              target="_blank"
+              rel="noopener"
+              >Reservar</a
+            >
+          </li>
         </ul>
       </div>
     </nav>
 
     <header id="inicio" class="hero">
+      <video
+        class="hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        preload="metadata"
+      >
+        <source src="/hero-cartel.mp4" type="video/mp4" />
+      </video>
       <div class="hero-top-info">
         <span>Adega Lastras</span>
         <span>|</span>
@@ -41,8 +72,6 @@
       </div>
 
       <h1>La Mejor<br />Tortilla</h1>
-
-      <div class="fun-text-bg">Food &amp; Wine &amp; Tradition</div>
 
       <div class="hero-icons">
         <div class="icon-circle">
@@ -55,7 +84,7 @@
       </div>
 
       <div style="margin-top: 40px; z-index: 2;">
-        <a href="#carta" class="btn-black">Ver Menu</a>
+        <a href="/carta.html" class="btn-black">Ver Menu</a>
       </div>
     </header>
 
@@ -99,7 +128,7 @@
 
             <p class="intro">
               "El secreto no es una formula magica. Son
-              <strong>11 huevos de casa</strong>, patata kennebec y perder la
+              <strong>11 huevos de casa</strong>, patata de Betanzos y perder la
               nocion del tiempo frente a los fogones."
             </p>
 
@@ -125,103 +154,6 @@
     <div class="ornament-divider">
       <i class="fas fa-utensils"></i>
     </div>
-
-    <section id="carta" class="menu-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2>Nuestra Cocina</h2>
-          <p>Tradicion gallega, producto de km 0 y las manos de Pedro Mino.</p>
-        </div>
-
-        <div class="laureadas-grid">
-          <div class="dish-card" data-aos="fade-up" data-aos-delay="100">
-            <span class="badge-award"
-              ><i class="fas fa-trophy"></i> Mejor de Betanzos 2025</span
-            >
-            <div
-              class="card-img"
-              style="background-image: url('/images/tortilla-tradicional.jpg');"
-            ></div>
-            <div class="card-content">
-              <h3>La Clasica Campeona</h3>
-              <p>
-                La receta que convencio al jurado. Patata kennebec, huevos de
-                casa y cremosidad extrema.
-              </p>
-              <span class="price">Pequena 12€ | Grande 18€</span>
-            </div>
-          </div>
-
-          <div class="dish-card" data-aos="fade-up" data-aos-delay="200">
-            <span class="badge-award"
-              ><i class="fas fa-star"></i> Campeona Xantar</span
-            >
-            <div
-              class="card-img"
-              style="background-image: url('/images/tortilla-gourmet.png');"
-            ></div>
-            <div class="card-content">
-              <h3>La Gourmet de Vieiras</h3>
-              <p>
-                Con vieiras y papada iberica. Un mar y montana ganador a la
-                creatividad gallega.
-              </p>
-              <span class="price">Racion 22€</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="menu-container">
-          <div class="menu-category" data-aos="fade-in">
-            <h3 class="cat-title">De la Tierra</h3>
-
-            <div class="menu-item">
-              <div class="item-info">
-                <h4>Raxo de Cerdo con Patatas</h4>
-                <p>Adobado tradicional con pimenton y ajo.</p>
-              </div>
-              <span class="item-price">12.00€</span>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-info">
-                <h4>Zorza Casera</h4>
-                <p>Con patatas fritas en aceite de oliva.</p>
-              </div>
-              <span class="item-price">10.50€</span>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-info">
-                <h4>Croquetas de Jamon</h4>
-                <p>Cremosidad maxima, receta de la abuela.</p>
-              </div>
-              <span class="item-price">9.00€</span>
-            </div>
-          </div>
-
-          <div class="menu-category" data-aos="fade-in">
-            <h3 class="cat-title">Del Mar</h3>
-
-            <div class="menu-item">
-              <div class="item-info">
-                <h4>Zamburinas a la Plancha</h4>
-                <p>Salsa verde ligera.</p>
-              </div>
-              <span class="item-price">16.00€</span>
-            </div>
-
-            <div class="menu-item">
-              <div class="item-info">
-                <h4>Pulpo A Feira</h4>
-                <p>Con cachelos, pimenton y AOVE.</p>
-              </div>
-              <span class="item-price">S/M</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
     <section id="galeria" class="gallery-section">
       <div class="container">
@@ -353,9 +285,10 @@
     </footer>
 
     <a
-      href="https://wa.me/34600000000?text=Hola,%20quisiera%20reservar%20una%20mesa"
+      href="https://api.whatsapp.com/message/CN57R5THJUMKC1?autoload=1&app_absent=0&utm_source=ig"
       class="btn-whatsapp"
       target="_blank"
+      rel="noopener"
     >
       <i class="fab fa-whatsapp"></i>
     </a>
