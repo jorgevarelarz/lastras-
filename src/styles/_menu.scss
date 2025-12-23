@@ -10,6 +10,9 @@
   text-decoration: none;
   border: 1px solid $text-black;
   transition: all 0.3s;
+  position: relative;
+  z-index: 2;
+  pointer-events: auto;
 
   &:hover {
     background: transparent;

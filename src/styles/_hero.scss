@@ -6,6 +6,7 @@
   padding-top: 80px;
   background-color: $bg-color;
   position: relative;
+  isolation: isolate;
 
   .hero-video {
     width: 100%;
@@ -13,6 +14,8 @@
     object-fit: cover;
     display: block;
     pointer-events: none;
+    position: relative;
+    z-index: 0;
   }
 
   > *:not(.hero-video) {

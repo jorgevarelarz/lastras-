@@ -83,6 +83,9 @@ nav {
         border-radius: 0;
         font-family: $font-display;
         transition: all 0.3s;
+        position: relative;
+        z-index: 2;
+        pointer-events: auto;
 
         &:hover {
           background: transparent;
