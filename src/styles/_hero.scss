@@ -5,12 +5,19 @@
   text-align: center;
   padding-top: 80px;
   background-color: $bg-color;
+  position: relative;
 
   .hero-video {
     width: 100%;
     height: 60vh;
     object-fit: cover;
     display: block;
+    pointer-events: none;
+  }
+
+  > *:not(.hero-video) {
+    position: relative;
+    z-index: 1;
   }
 
   .hero-top-info {
