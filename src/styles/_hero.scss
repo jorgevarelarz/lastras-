@@ -23,6 +23,11 @@
     z-index: 1;
   }
 
+  > *:not(.hero-video) {
+    position: relative;
+    z-index: 1;
+  }
+
   .hero-top-info {
     display: flex;
     gap: 2rem;

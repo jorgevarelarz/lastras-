@@ -1,25 +1,31 @@
 export const initMenu = () => {
-  const menuIcon = document.querySelector('.menu-icon');
+  const menuToggle = document.getElementById('mobile-menu');
   const navLinks = document.querySelector('.nav-links');
 
-  if (!menuIcon || !navLinks) {
+  if (!menuToggle || !navLinks) {
     return;
   }
 
-  const links = navLinks.querySelectorAll('li');
+  const links = navLinks.querySelectorAll('a');
 
-  menuIcon.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
-    menuIcon.classList.toggle('toggle');
-    const expanded = menuIcon.classList.contains('toggle');
-    menuIcon.setAttribute('aria-expanded', String(expanded));
+  menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    const icon = menuToggle.querySelector('i');
+    if (icon) {
+      const isOpen = navLinks.classList.contains('active');
+      icon.classList.toggle('fa-bars', !isOpen);
+      icon.classList.toggle('fa-times', isOpen);
+    }
   });
 
   links.forEach((link) => {
     link.addEventListener('click', () => {
-      navLinks.classList.remove('nav-active');
-      menuIcon.classList.remove('toggle');
-      menuIcon.setAttribute('aria-expanded', 'false');
+      navLinks.classList.remove('active');
+      const icon = menuToggle.querySelector('i');
+      if (icon) {
+        icon.classList.add('fa-bars');
+        icon.classList.remove('fa-times');
+      }
     });
   });
 };
