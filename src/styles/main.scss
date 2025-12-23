@@ -1,0 +1,105 @@
+@use './variables' as *;
+@use './header';
+@use './hero';
+@use './menu';
+@use './chef';
+@use './gallery';
+@use './footer';
+@use './whatsapp';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-body;
+  background-color: $bg-color;
+  color: $text-black;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.divider-line {
+  width: 100%;
+  height: 1px;
+  background-color: $text-black;
+  margin: 2rem 0;
+}
+
+.awards-strip {
+  background-color: $bg-color;
+  padding: 4rem 0;
+  border-top: 1px solid $text-black;
+  border-bottom: 1px solid $text-black;
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+    text-align: center;
+
+    .award {
+      color: $text-black;
+
+      i {
+        font-size: 3rem;
+        color: $text-black;
+        margin-bottom: 1.5rem;
+        display: block;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 0.5rem;
+        color: $text-black;
+      }
+
+      p {
+        font-family: $font-body;
+        color: $text-black;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.ornament-divider {
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+
+  i {
+    color: $text-black;
+    font-size: 1.5rem;
+    background-color: $bg-color;
+    padding: 0 15px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 1px;
+    background-color: $text-black;
+    z-index: 0;
+  }
+}

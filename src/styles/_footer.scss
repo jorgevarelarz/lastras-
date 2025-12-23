@@ -1,0 +1,83 @@
+@use './variables' as *;
+
+.contact-section {
+  background-color: $text-black;
+  color: $bg-color;
+  padding: 4rem 0 2rem 0;
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+
+    .info-col {
+      h3 {
+        font-family: $font-display;
+        color: $accent-green;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-bottom: 1rem;
+          display: flex;
+          align-items: flex-start;
+          gap: 10px;
+          font-size: 1rem;
+          color: $bg-color;
+
+          i {
+            color: $accent-green;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      .social-links {
+        margin-top: 1.5rem;
+
+        a {
+          color: $bg-color;
+          font-size: 1.5rem;
+          margin-right: 15px;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $accent-green;
+          }
+        }
+      }
+    }
+
+    .map-col {
+      iframe {
+        width: 100%;
+        height: 100%;
+        min-height: 250px;
+        border: 0;
+        border-radius: 0;
+        filter: grayscale(100%);
+        transition: filter 0.3s;
+        outline: 1px solid $bg-color;
+
+        &:hover {
+          filter: grayscale(0%);
+        }
+      }
+    }
+  }
+
+  .footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 0.8rem;
+    color: rgba($bg-color, 0.7);
+  }
+}

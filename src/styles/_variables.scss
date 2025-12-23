@@ -1,0 +1,32 @@
+// Colores basados en el cartel
+$bg-color: #f3f1ea; // Fondo crema
+$text-black: #111111; // Negro casi puro
+$accent-green: #cbd2a4; // Verde oliva/pastel
+$lines: #000000; // Lineas finas negras
+
+// Fuentes
+$font-display: 'Oswald', sans-serif;
+$font-fun: 'Chewy', cursive;
+$font-body: 'Inter', sans-serif;
+
+// Alias tipografico para estilos existentes
+$font-head: $font-display;
+
+// Mixin
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+// Aliases para mantener compatibilidad con estilos existentes
+$stone: $text-black;
+$wine: $text-black;
+$tortilla: $accent-green;
+$paper: $bg-color;
+$wood: $text-black;
+$primary: $text-black;
+$accent: $accent-green;
+$dark: $text-black;
+$light: $bg-color;
+$text: $text-black;
